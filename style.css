@@ -59,5 +59,11 @@ li{
 
 img {
     border-radius: 12px;
+    margin: 0;
+}
+
+
+.bold-text{
+    font-weight: 700;
 }
 
