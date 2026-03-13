@@ -3,7 +3,7 @@ body{
     background-color: #f5eee4;
     color: #000000;
     line-height: 1.5;
-    padding: 10px;
+   padding: 25px;
 }
 
 .container{
@@ -67,3 +67,7 @@ img {
     font-weight: 700;
 }
 
+#footer{
+    text-align: center;
+    margin-top: 1px;
+}
