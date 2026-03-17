@@ -127,7 +127,8 @@ img {
     color: #666;
 }
 
-.window-style input, textarea {
+.window-style input,
+.window-style textarea {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
@@ -181,7 +182,8 @@ body.dark .window-style {
     color: #f1efef;
 }
 
-body.dark .window-style input, textarea {
+body.dark .window-style input, 
+body.dark .window-style textarea {
     background-color: #111827;
     color: white;
 }
