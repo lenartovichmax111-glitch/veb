@@ -7,6 +7,9 @@
     <title>CV</title>
 </head>
 <body>
+    <button id="temu">
+        <img src="temu.jpg" alt="Змінити тему" id="icon" width="15" height="15">
+    </button>
     <div class="container">
         <div class="left">
             <h1>Junior Network Engineer</h1>
@@ -58,12 +61,31 @@
     </div>
         
     </div>
-
+    <div class="comment-style">
+        <h2>Відгуки попередніх роботадавців</h2>
+        <span id="comments-text"></span>
+    </div>
     <footer id="footer">
         <h3>Дані браузера</h3>
         <span id="footer-info"></span>
     </footer>
 
+
+    <div id="modalWindow" class="window-style">
+        <span id="modal-close">&times;</span>
+        <h2>Форма зворотнього зв'язку</h2>
+        <form id="form" action="https://formspree.io/f/mgonnqrp" method="POST">
+            <label for="name">Ім'я: </label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <label for="message">Повідомлення: </label>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit" name="go">Відправити</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

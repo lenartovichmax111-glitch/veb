@@ -71,3 +71,125 @@ img {
     text-align: center;
     margin-top: 1px;
 }
+
+.comment-style{
+    background-color: #e5e7eb;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 2000px;
+    margin: 20px auto;
+}
+.comment-style h2{
+    text-align: center;
+}
+
+
+
+
+
+
+.window-style {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    font-family: sans-serif;
+}
+
+#modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.window-style h2 {
+
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+
+.window-style label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.window-style input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+}
+
+.window-style button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+
+    cursor: pointer;
+     border: none;
+}
+.window-style button:hover {
+    background-color: #0056b3;
+}
+
+
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark .container {
+    background-color: #1f2937;
+    color: #f5eee4;
+}
+
+body.dark .left {
+    background-color: #000;
+    color: white;
+}
+
+body.dark .right,
+body.dark .comment-style {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark .window-style {
+    background-color: #152a49;
+    color: #f1efef;
+}
+
+body.dark .window-style input, textarea {
+    background-color: #111827;
+    color: white;
+}
+
+body.dark .window-style h2 {
+    color: #ffffff;
+}
+
+body.dark .window-style label {
+    color: #e5e7eb;
+}
