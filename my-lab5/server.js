@@ -39,7 +39,7 @@ server.route({
         }
     },
     handler: async (request, h) => {
-            console.log("БЕКЕНД ОТРИМАВ ЗАПИТ!");
+            console.log("є запит?");
             console.log("Дані з форми:", request.payload);
             const { name, email, phone, message } = request.payload;
             try{
