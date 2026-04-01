@@ -62,3 +62,30 @@ autoTemu();
 buton.onclick = function(){
     document.body.classList.toggle("dark");
 }
+
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+
+    let errorStyle = document.getElementById("error");
+    const responce = await fetch("/api/contact", {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    });
+
+    if(responce.ok){
+        errorStyle.style.display = "none";
+        modal.style.display = "none";
+        clearTimeout(timer);
+        timer = setTimer();
+    }else{
+        const errorData = await responce.json();
+        errorStyle.innerText = "⚠️ " + (errorData.message || "Помилка валідації");
+        errorStyle.style.display = "block";
+    }
+});
